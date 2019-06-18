@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1062404133867",
+    "firebase_url": "https://collage-a1336.firebaseio.com",
+    "project_id": "collage-a1336",
+    "storage_bucket": "collage-a1336.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062404133867:android:113d6aaca4198710",
+        "android_client_info": {
+          "package_name": "com.group.milan.collage.collagenetworking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062404133867-osrk2g17r06q52n6ng67bdk7rqiii72t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.group.milan.collage.collagenetworking",
+            "certificate_hash": "d309075bab46d44d00e3a24b6018ee5d18134d42"
+          }
+        },
+        {
+          "client_id": "1062404133867-4dl1teh5d8pt1vcctrdqph2shm2ose2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAPPPekfUprLWKv7nEZ_OCyuap_aGFhnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062404133867-4dl1teh5d8pt1vcctrdqph2shm2ose2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

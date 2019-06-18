@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SetIpActivity.SetIpActivity"
+    tools:showIn="@layout/activity_set_ip">
+
+    <EditText
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:padding="16dp"
+        android:inputType="text|textMultiLine"
+        android:background="@drawable/edit_text_box"
+        android:id="@+id/ip_text"
+        android:hint="Enter your IP Address of wifi ?"
+        android:textSize="16dp"
+        android:textColorHint="@color/backgroundDeepGrayColor"
+        android:textColor="#000"
+        android:fontFamily="@font/semibold"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#FFF"
+        android:text="Go ->"
+        android:fontFamily="@font/semibold"
+        android:background="@color/themeBlueColor"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/set_ip_btn"/>
+
+
+</RelativeLayout>

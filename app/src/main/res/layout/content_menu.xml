@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuActivity.MenuActivity"
+    tools:showIn="@layout/activity_menu">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_icon"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Menu"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:fontFamily="@font/semibold" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- body-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Milan Shrestha"
+                android:textSize="20dp"
+                android:id="@+id/username"
+                android:fontFamily="@font/semibold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch"
+                android:textColor="#000"
+                android:text="CSE"
+                android:textSize="16dp"
+                android:fontFamily="@font/bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/usn"
+                android:text="1RI6CS403"
+                android:textSize="16dp"
+                android:fontFamily="@font/bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/replay_button"
+                android:id="@+id/logout_button"
+                android:text="Logout"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/semibold"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

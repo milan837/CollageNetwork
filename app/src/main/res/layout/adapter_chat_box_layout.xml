@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:text="Milan Shrestha"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/adapter_chat_username"
+            android:fontFamily="@font/bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:textSize="12dp"
+            android:textColor="@color/backgroundDeepGrayColor"
+            android:text="24 min"
+            android:layout_alignParentRight="true"
+            android:id="@+id/adapter_chat_date"
+            android:fontFamily="@font/semibold"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:text="K xa khaber br???"
+        android:id="@+id/adapter_chat_message"
+        android:fontFamily="@font/semibold"/>
+
+
+
+
+</LinearLayout>

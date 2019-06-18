@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NoticeDetailsActivity.NoticeDetailsActivity"
+    tools:showIn="@layout/activity_notice_details">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:id="@+id/backi_icon"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Department Notice"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/semibold" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleSmall"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/backgroundDeepGrayColor"
+                    android:text="Publish On"
+                    android:fontFamily="@font/semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:text="2017-18-02"
+                    android:id="@+id/notice_date"
+                    android:fontFamily="@font/semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/backgroundDeepGrayColor"
+                    android:text="Subject"
+                    android:fontFamily="@font/semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:text="Fee Payment for the semester"
+                    android:id="@+id/notice_subject"
+                    android:fontFamily="@font/semibold"/>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/notice_details_image"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="#FFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:text="Fee Payment for the semester"
+                    android:id="@+id/notice_body"
+                    android:fontFamily="@font/semibold"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

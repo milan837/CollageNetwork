@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CollageNetworking</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_login_activitys">LoginActivitys</string>
+    <string name="title_activity_sign_up_activitys">SignUpActivitys</string>
+    <string name="title_activity_verification_activitys">VerificationActivitys</string>
+    <string name="title_activity_update_details">UpdateDetailsActivity</string>
+    <string name="title_activity_admin_notice">AdminNoticeActivity</string>
+    <string name="title_activity_department_notice">DepartmentNoticeActivity</string>
+    <string name="title_activity_notice_details">NoticeDetailsActivity</string>
+    <string name="title_activity_forum_question_list">ForumQuestionListActivity</string>
+    <string name="title_activity_forum_answer">ForumAnswerActivity</string>
+    <string name="title_activity_forum_post_answer">ForumPostAnswerActivity</string>
+    <string name="title_activity_froum_post_question">FroumPostQuestionActivity</string>
+    <string name="title_activity_publish_project_list">PublishProjectListActivity</string>
+    <string name="title_activity_participated_project_list">ParticipatedProjectListActivity</string>
+    <string name="title_activity_post_project">PostProjectActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_developer_details">DeveloperDetailsActivity</string>
+    <string name="title_activity_set_ip">SetIpActivity</string>
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/menu_icon"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Network"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:fontFamily="@font/semibold" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- body-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000"-->
+                <!--android:text="Milan Shrestha"-->
+                <!--android:textSize="25dp"-->
+                <!--android:fontFamily="@font/semibold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000"-->
+                <!--android:text="CSE"-->
+                <!--android:textSize="16dp"-->
+                <!--android:fontFamily="@font/bold" />-->
+        <!--</LinearLayout>-->
+
+
+        <!-- 1 row  menu -->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- option of menu first -->
+            <LinearLayout
+                android:id="@+id/menu_admin_notice"
+                android:layout_marginRight="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bell"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Admin\nNotice"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+            <!-- option of menu -->
+            <LinearLayout
+                android:id="@+id/menu_department_notice"
+                android:layout_marginLeft="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bell"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Department\nNotice"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 2 row  menu -->
+        <LinearLayout
+            android:id="@+id/menu_published_project"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- option of menu first -->
+            <LinearLayout
+                android:layout_marginRight="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/publish_project"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Published\nProject"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+            <!-- option of menu -->
+            <LinearLayout
+                android:id="@+id/menu_participated_project"
+                android:layout_marginLeft="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/participated_project"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Participated\nProject"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 3 row  menu -->
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- option of menu first -->
+            <LinearLayout
+                android:id="@+id/menu_forum"
+                android:layout_marginRight="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/forum"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Forum\nHelp ?"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+            <!-- option of menu -->
+            <LinearLayout
+                android:id="@+id/menu_developer"
+                android:layout_marginLeft="3dp"
+                android:background="#FFF"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/developer"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Developer\nDetails"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/semibold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

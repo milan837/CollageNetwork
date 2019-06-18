@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity.LoginActivity"
+    tools:showIn="@layout/activity_login_activity">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <!-- logo -->
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/authentication_login_app_logo"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/themeColor"/>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:text="Collage Network"
+            android:fontFamily="@font/bold"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/login_edittext_email"
+            android:hint="E-mail"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/login_edittext_password"
+            android:hint="Password"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:id="@+id/login_textview_forget_password"
+            android:text="Forget password ?"
+            android:fontFamily="@font/regular"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:id="@+id/login_button"
+            android:textSize="16dp"
+            android:paddingBottom="4dp"
+            android:textAllCaps="false"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/regular"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Create An account"
+            android:id="@+id/signup_button"
+            android:background="@drawable/login_with_facebook_button"
+            android:fontFamily="@font/regular"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

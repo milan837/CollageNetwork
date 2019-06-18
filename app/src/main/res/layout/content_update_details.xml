@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UpdateDetailsActivity.UpdateDetailsActivity"
+    tools:showIn="@layout/activity_update_details">
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:text="Give Your Details"
+            android:fontFamily="@font/bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/update_edittext_username"
+            android:hint="Username"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/update_edittext_branch"
+            android:hint="Branch"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:background="@drawable/auth_text_box"
+            android:id="@+id/update_edittext_usn"
+            android:hint="Usn"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Procced"
+            android:id="@+id/update_button"
+            android:textSize="16dp"
+            android:paddingBottom="4dp"
+            android:textAllCaps="false"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/regular"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

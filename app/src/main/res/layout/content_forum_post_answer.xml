@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ForumPostAnswerActivity.ForumPostAnswerActivity"
+    tools:showIn="@layout/activity_forum_post_answer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:id="@+id/back_icon"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Forum"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/semibold" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Why so serious?"
+                android:id="@+id/forum_post_question"
+                android:fontFamily="@font/semibold"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:padding="16dp"
+                android:inputType="text|textMultiLine"
+                android:background="@drawable/edit_text_box"
+                android:id="@+id/forum_post_answer"
+                android:hint="Give Your Answer"
+                android:textSize="16dp"
+                android:textColorHint="@color/backgroundDeepGrayColor"
+                android:textColor="#000"
+                android:fontFamily="@font/semibold"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00BE5F"
+        android:fontFamily="@font/semibold"
+        android:text="Replay"
+        android:textColor="#FFF"
+        android:id="@+id/forum_post_answer_button"
+        android:textSize="16dp" />
+
+</RelativeLayout>

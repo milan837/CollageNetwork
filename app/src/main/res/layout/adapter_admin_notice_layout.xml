@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/backgroundDeepGrayColor"
+            android:text="Publish On"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:text="2017-18-02"
+            android:id="@+id/adapter_admin_notice_date"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="14dp"
+            android:textColor="@color/backgroundDeepGrayColor"
+            android:text="Subject"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Fee Payment for the semester"
+            android:id="@+id/adapter_admin_notice_subject"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/backgroundDeepGrayColor"
+            android:text="More..."
+            android:fontFamily="@font/semibold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
